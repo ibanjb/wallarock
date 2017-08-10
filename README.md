@@ -26,6 +26,7 @@ Below you'll find information about performing common tasks. The most recent ver
   * [Networking](#networking)
   * [iOS Simulator won't open](#ios-simulator-wont-open)
   * [QR Code does not scan](#qr-code-does-not-scan)
+  * [Thanks](#thanks)
 
 ## Updating to New Releases
 
@@ -218,3 +219,12 @@ There are a few steps you may want to take to troubleshoot these kinds of errors
 If you're not able to scan the QR code, make sure your phone's camera is focusing correctly, and also make sure that the contrast on the two colors in your terminal is high enough. For example, WebStorm's default themes may [not have enough contrast](https://github.com/react-community/create-react-native-app/issues/49) for terminal QR codes to be scannable with the system barcode scanners that the Expo app uses.
 
 If this causes problems for you, you may want to try changing your terminal's color theme to have more contrast, or running Create React Native App from a different terminal. You can also manually enter the URL printed by the packager script in the Expo app's search bar to load it manually.
+
+### Thanks
+
+Thanks to all those people that, with their outstanding work, make our live better, faster and stronger:
+
+* [Facebook React team](https://facebook.github.io/react-native) with their fantastic job . But, remember to change the licency type pls ^^
+* All the members of [Expo](https://expo.io) company, they provide us an elegant way of working 
+* People from [Native Base](https://nativebase.io)
+* Thanks to [Preston Racette](http://www.prestonracette.com) for his Urba font used in this application (Can find more info at [dafont.com](http://www.dafont.com/preston-racette.d3995)
