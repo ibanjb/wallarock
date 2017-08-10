@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, Image } from 'react-native';
 import {  Header, Left, Right, Body, Icon, Button, Text } from 'native-base';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import MapView from 'react-native-maps';
 
 export default class HeaderMain extends React.Component {  
   constructor(props, context) {

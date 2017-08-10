@@ -1,4 +1,6 @@
 import React from 'react';
+import AppInit from "./src/AppInit";
+
 import { StyleSheet, StatusBar, View, Text } from 'react-native';
 import { Root } from "native-base";
 import HeaderMain from './src/components/HeaderMain';
@@ -28,6 +30,8 @@ export default class App extends React.Component {
     if (!this.state.isReady) {
       return <View><Text>Loading...</Text></View>;
     }
+    return <AppInit />
+    /*
     StatusBar.setBarStyle('light-content', true)
     return (      
       <Root style={styles.container}>
@@ -35,11 +39,6 @@ export default class App extends React.Component {
         <SideDrawer />
       </Root>      
     );
+    */
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#ffffff',
-  },
-});

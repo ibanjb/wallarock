@@ -227,4 +227,4 @@ Thanks to all those people that, with their outstanding work, make our live bett
 * [Facebook React team](https://facebook.github.io/react-native) with their fantastic job . But, remember to change the licency type pls ^^
 * All the members of [Expo](https://expo.io) company, they provide us an elegant way of working 
 * People from [Native Base](https://nativebase.io)
-* Thanks to [Preston Racette](http://www.prestonracette.com) for his Urba font used in this application (Can find more info at [dafont.com](http://www.dafont.com/preston-racette.d3995)
+* Thanks to [Preston Racette](http://www.prestonracette.com) for his Urba font used in this application (Can find more info at [dafont.com](http://www.dafont.com/preston-racette.d3995))
