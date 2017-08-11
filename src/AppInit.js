@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
+import { Platform } from "react-native";
 import { Root } from "native-base";
 import { StackNavigator } from "react-navigation";
 import Drawer from "./Drawer";
 import ContentMain from "./components/ContentMain";
-import HeaderMain from './components/HeaderMain';
 
 const AppNavigator = StackNavigator(
     {
@@ -18,9 +18,8 @@ const AppNavigator = StackNavigator(
 );
 
 export default () =>
-    <Root style={styles.container}>
-        <HeaderMain />
-        <AppNavigator />
+    <Root style={styles.container}>        
+        <AppNavigator />        
     </Root>;
 
 

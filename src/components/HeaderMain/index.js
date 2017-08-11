@@ -5,7 +5,10 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 export default class HeaderMain extends React.Component {  
   constructor(props, context) {
-    super(props, context);    
+    super(props, context);
+    this.state = {
+      openDrawer: props.openDrawer,
+    };
   }
 
   onBurguerButtonPress() {
@@ -20,7 +23,7 @@ export default class HeaderMain extends React.Component {
     return (
       <Header style={styles.container}>
           <Left>
-            <Button transparent onPress={this.onBurguerButtonPress.bind(this)} >
+            <Button transparent onPress={() => this.props.navigation.navigate("DrawerOpen")} >
               <Icon name='menu' style={styles.button} />
             </Button>
           </Left>

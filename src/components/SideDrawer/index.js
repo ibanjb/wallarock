@@ -16,11 +16,9 @@ export default class SideDrawer extends React.Component {
 
     return (
       <Drawer ref={(ref) => { this.drawer = ref; }}
-              content={<SideBar navigator={this.navigator} />}
-              onClose={() => this.closeDrawer()} >
-
-        <SideBar />
-        
+              content={<SideBar navigator={this.navigator} openDrawer={this.openDrawer.bind(this)} />}
+              onClose={() => this.closeDrawer()} >        
+        <SideBar />        
       </Drawer>
     );
   }
