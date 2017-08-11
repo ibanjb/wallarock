@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { Content } from "native-base";
+import { Container, Content } from "native-base";
 import HeaderMain from '../HeaderMain';
 
 export default class ContentMain extends React.Component {  
@@ -11,14 +11,16 @@ export default class ContentMain extends React.Component {
 
   render() {
     return (
-      <Content>
+      <Container>
         <HeaderMain navigation={this.props.navigation} />        
-        <View>
-          <Text> 
-              Main content component 
-          </Text>
-        </View>
-      </Content>
+        <Content>          
+          <View>
+            <Text> 
+                Main content component 
+            </Text>
+          </View>
+        </Content>
+      </Container>
     );
   }
 }
