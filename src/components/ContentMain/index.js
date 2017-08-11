@@ -1,7 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { Container, Content } from "native-base";
+import { Container, Content, Body, Left, Right } from "native-base";
 import HeaderMain from '../HeaderMain';
+import LoginModal from '../LoginModal';
+import Hero from '../Hero';
+import BannerHorizontal from '../BannerHorizontal';
 
 export default class ContentMain extends React.Component {  
 
@@ -13,10 +16,12 @@ export default class ContentMain extends React.Component {
     return (
       <Container>
         <HeaderMain navigation={this.props.navigation} />        
-        <Content>          
-          <View>
-            <Text> 
-                Main content component 
+        <Content>
+          <Hero />
+          <BannerHorizontal />
+          <View style={styles.innerContainer}>            
+            <Text style={[styles.text, styles.textDestacado]}> 
+              Destacado en tu zona
             </Text>
           </View>
         </Content>
@@ -24,3 +29,19 @@ export default class ContentMain extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: { 
+  },
+  innerContainer: {
+    paddingTop: 20,
+    marginLeft: 20,
+  },
+  text: {
+    color: '#000',
+    fontFamily: 'Roboto',
+  },
+  textDestacado: {    
+    fontSize: 18,    
+  },
+});

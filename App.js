@@ -21,6 +21,8 @@ export default class App extends React.Component {
       Roboto_medium: require('native-base/Fonts/Roboto_medium.ttf'),
       Ionicons: require('@expo/vector-icons/fonts/Ionicons.ttf'),
       Urba: require('./fonts/Urba.ttf'),
+      Luna: require('./fonts/Luna.ttf'),
+      Bosk: require('./fonts/Bosk.ttf'),
     });
 
     this.setState({ isReady: true });
