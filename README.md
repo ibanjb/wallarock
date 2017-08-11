@@ -11,6 +11,8 @@ Below you'll find information about performing common tasks. The most recent ver
   * [npm run ios](#npm-run-ios)
   * [npm run android](#npm-run-android)
   * [npm run eject](#npm-run-eject)
+  * [start](#start)
+  * [jsonServer](#jsonServer)
 * [Writing and Running Tests](#writing-and-running-tests)
 * [Environment Variables](#environment-variables)
   * [Configuring Packager IP Address](#configuring-packager-ip-address)
@@ -82,6 +84,17 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 This will start the process of "ejecting" from Create React Native App's build scripts. You'll be asked a couple of questions about how you'd like to build your project.
 
 **Warning:** Running eject is a permanent action (aside from whatever version control system you use). An ejected app will require you to have an [Xcode and/or Android Studio environment](https://facebook.github.io/react-native/docs/getting-started.html) set up.
+
+#### `start`
+
+This bat file will launch the command "yarnpkg start"
+
+
+#### `jsonServer`
+
+This bat file will start the Json Server using the json file located at ./jsonServer/api.json.
+
+You will need to install JsonServer as global before execute this command. You can find more information in its [Github account](https://github.com/typicode/json-server)
 
 ## Customizing App Display Name and Icon
 

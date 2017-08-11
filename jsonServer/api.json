@@ -1,0 +1,15 @@
+{
+  "boxes": [
+    { "id": 1, "title": "Audi A1 Sportback 1.6 TDi 90cv 5 puertas", "description": "Sportback 1.6 TDI 90 Ambition 5p - 2014 - 58000Km", "price": "14.450", "currency": "€", "images": [{ "url": "" }, { "url": "" }, { "url": "" }] },
+    { "id": 2, "title": "TV 37\" Samsung", "description": "Vendo televisor LED de 37\" pulgadas en muy buen estado. Es Full HD y extrafina.", "price": "275", "currency": "€" , "images": [{ "url": "" }] },
+    { "id": 3, "title": "Bicicleta", "description": "bicicleta de montaña", "price": "60", "currency": "€", "images": [{ "url": "" }, { "url": "" }] },
+    { "id": 4, "title": "Ajedrez portable", "description": "Ajedrez para llevar a cualquier sitio", "price": "8,5", "currency": "€", "images": [{ "url": "" }, { "url": "" }] },
+    { "id": 5, "title": "Samsung galaxy s5", "description": "como nuevo, solo movil, 8gb, va de lujo, solo ofertas serias", "price": "105", "currency": "€", "images": [{ "url": "" }, { "url": "" }, { "url": "" }] },
+    { "id": 6, "title": "Raqueta bádminton", "description": "Raqueta de bádminton en perfecto estado", "price": "5", "currency": "€", "images": [{ "url": "" }] }
+  ],
+  "comments": [
+    { "id": 1, "body": "this is the first comment", "postId": 1 },
+    { "id": 2, "body": "this is the second comment", "postId": 2 },
+    { "id": 3, "body": "this is the third comment", "postId": 3 }
+  ]  
+}
