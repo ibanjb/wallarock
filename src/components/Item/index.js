@@ -12,10 +12,11 @@ export default class Item extends React.Component {
   } 
 
   render() {
-    const title = this.props.value;
+    const identifier = this.props.identifier;
+    const title = this.props.title;
     const subTitle = this.props.subTitle;
     const description = this.props.description;
-    const stars = this.props.stars;
+    const stars = this.props.stars;    
     return ( 
         <Card>
           <CardItem>
@@ -27,9 +28,9 @@ export default class Item extends React.Component {
               </Body>
             </Left>
           </CardItem>
-          <CardItem>
+          <CardItem button onPress={() => console.log(identifier)}>
             <Body>
-              <Image source={drawerCover} style={{width: 100, height: 100}}/>
+              <Image source={drawerCover} style={{width: 100, height: 100}} />
               <Text>
                 { description }
               </Text>
@@ -38,8 +39,8 @@ export default class Item extends React.Component {
           <CardItem>
             <Left>
               <Button transparent textStyle={{color: '#87838B'}}>
-                <Icon name="logo-github" />
-                <Text>{stars} stars</Text>
+                <Icon name="logo-facebook" />
+                <Text> {stars} likes</Text>
               </Button>
             </Left>
           </CardItem>
@@ -49,6 +50,7 @@ export default class Item extends React.Component {
 }
 
 Item.propTypes = {
+    identifier: React.PropTypes.number.isRequired,
     title: React.PropTypes.string.isRequired,
     subTitle: React.PropTypes.string.isRequired,
     description: React.PropTypes.string.isRequired,

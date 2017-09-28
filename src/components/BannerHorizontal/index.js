@@ -2,7 +2,8 @@ import React from 'react';
 import { Dimensions, StyleSheet, Image, View, Text } from 'react-native';
 import { Container, Content } from "native-base";
 
-const deviceWidth = Dimensions.get("window").width;
+const deviceWidth = Dimensions.get('window').width;
+const deviceHeight = Dimensions.get('window').height;
 
 export default class BannerHorizontal extends React.Component {  
 
@@ -15,7 +16,7 @@ export default class BannerHorizontal extends React.Component {
       <View style={styles.container}>
         <View style={styles.innerContainer}>
           <Text style={styles.text}>
-              bikes
+              this is a banner
           </Text>
         </View>
       </View>

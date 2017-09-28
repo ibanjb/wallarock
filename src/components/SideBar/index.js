@@ -43,7 +43,7 @@ const datas = [
 	},
 ];
 
-const drawerCover = require("../../../images/stars.jpg");
+const drawerCover = require("../../../images/gradient.png");
 
 export default class SideBar extends React.Component {
 	constructor(props) {
