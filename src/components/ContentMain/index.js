@@ -5,6 +5,7 @@ import HeaderMain from '../HeaderMain';
 import LoginModal from '../LoginModal';
 import Hero from '../Hero';
 import BannerHorizontal from '../BannerHorizontal';
+import Items from '../Items';
 
 export default class ContentMain extends React.Component {  
 
@@ -21,8 +22,9 @@ export default class ContentMain extends React.Component {
           <BannerHorizontal />
           <View style={styles.innerContainer}>            
             <Text style={[styles.text, styles.textDestacado]}> 
-              Destacado en tu zona
+              Here we have a typical grid 2x2
             </Text>
+            <Items />
           </View>
         </Content>
       </Container>
@@ -34,8 +36,7 @@ const styles = StyleSheet.create({
   container: { 
   },
   innerContainer: {
-    paddingTop: 20,
-    marginLeft: 20,
+    paddingTop: 20,    
   },
   text: {
     color: '#000',
