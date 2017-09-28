@@ -18,20 +18,22 @@ export default class Items extends React.Component {
   }
 
   addItem() {
-    const randomNumber = Math.floor(Math.random() * 6);
-    const id = randomNumber;
-    const title = 'Title' + randomNumber
-    const subTitle = 'Subtitle ' + randomNumber
-    const description = 'Description ' + randomNumber;
-    const stars = randomNumber > 0 ? '' + randomNumber * 123 : '999'; 
-      store.dispatch({
-          type: 'ADD_ITEM',          
-          id,
-          title,
-          subTitle,
-          description,
-          stars,          
-      });      
+    for (let i=0; i < 5; i++) {
+      const randomNumber = Math.floor(Math.random() * 6);
+      const id = randomNumber;
+      const title = 'Title' + randomNumber
+      const subTitle = 'Subtitle ' + randomNumber
+      const description = 'Description ' + randomNumber;
+      const stars = randomNumber > 0 ? '' + randomNumber * 123 : '999'; 
+        store.dispatch({
+            type: 'ADD_ITEM',          
+            id,
+            title,
+            subTitle,
+            description,
+            stars,          
+        });      
+      }    
     }
 
   renderItem(data, key) {
